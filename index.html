@@ -119,7 +119,22 @@
     <a href="https://www.granadahigh.com/" class="footer-link">Granada High School</a>
   </p>
 </footer>
+<script>
+  const code = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight'];
+  let index = 0;
 
+  window.addEventListener('keydown', (e) => {
+    if (e.key === code[index]) {
+      index++;
+      if (index === code.length) {
+        alert('💙 Special Feature Unlocked! You found the secret easter egg!');
+        index = 0;
+      }
+    } else {
+      index = 0;
+    }
+  });
+</script>
 
 </body>
 </html>
