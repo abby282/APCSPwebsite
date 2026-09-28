@@ -88,10 +88,12 @@ html {
 
 /* HERO IMAGE (shorter so cards don’t hug it) */
 .parallax {
-  background-image: url("https://codehs.com/uploads/f00721c2f51e5535b19a731cf30e90b4");
-  height: 320px; /* FIXED: shorter hero */
+  background-image: url("https://codehs.com/uploads/e4d3227449ef226d48ae87b0d0c8dfc4");
+  height: 370px; /* auto: shorter hero */
   background-position: center;
   background-size: cover;
+   background-attachment: fixed;
+  background-repeat: no-repeat;
   margin-bottom: 40px;
 }
 
