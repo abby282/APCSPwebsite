@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-
+<link rel="icon" type="image/x-icon" href="https://codehs.com/uploads/f00721c2f51e5535b19a731cf30e90b4">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
@@ -157,6 +157,20 @@
     <a href="https://www.granadahigh.com/" class="footer-link">Granada High School</a>
   </p>
 </footer>
+
+<script>
+  const originalTitle = document.title;
+
+  window.addEventListener('blur', () => {
+    // What the tab says when they click away
+    document.title = '👋 Come back soon!'; 
+  });
+
+  window.addEventListener('focus', () => {
+    // Restores your original title when they return
+    document.title = originalTitle; 
+  });
+</script>
 
 </body>
 </html>
