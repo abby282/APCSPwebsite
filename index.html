@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Home Page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="https://codehs.com/uploads/f00721c2f51e5535b19a731cf30e90b4">
@@ -119,20 +119,35 @@
     <a href="https://www.granadahigh.com/" class="footer-link">Granada High School</a>
   </p>
 </footer>
+
 <script>
-  const code = ['ArrowUp', 'ArrowUp', ];
+  const code = ['ArrowUp', 'ArrowUp','ArrowUp', 'ArrowUp', 'ArrowUp'];
   let index = 0;
 
   window.addEventListener('keydown', (e) => {
     if (e.key === code[index]) {
       index++;
       if (index === code.length) {
-        alert('💙 Special Feature Unlocked! You found the secret easter egg!');
+        alert(' You found the secret easter egg!🎉');
         index = 0;
       }
     } else {
       index = 0;
     }
+  });
+</script>
+
+<script>
+  const originalTitle = document.title;
+
+  window.addEventListener('blur', () => {
+    // What the tab says when they click away
+    document.title = '👋 Come back soon!'; 
+  });
+
+  window.addEventListener('focus', () => {
+    // Restores your original title when they return
+    document.title = originalTitle; 
   });
 </script>
 
